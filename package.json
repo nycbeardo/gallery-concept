@@ -1,0 +1,26 @@
+{
+  "name": "gallery-concept",
+  "version": "1.0.0",
+  "description": "gallery app concept in eleventy",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "jshint": "^2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "deploy": "aws s3 sync _site/ s3://BUCKET_NAME"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nycbeardo/gallery-concept.git"
+  },
+  "author": "Montique Stevens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nycbeardo/gallery-concept/issues"
+  },
+  "homepage": "https://github.com/nycbeardo/gallery-concept#readme"
+}
