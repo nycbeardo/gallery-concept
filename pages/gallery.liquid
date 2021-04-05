@@ -1,0 +1,28 @@
+---
+layout: base.liquid
+title: Gallery
+tags: nav
+date: 2021-04-05
+---
+
+<h3>Gallery</h3>
+
+<div class="flex-container-row centered">
+    {% for pic in collections.long %}
+        <a href="{{ pic.url }}">
+            <div class="gallery-pic-container">
+                <div class="flex-container-column centered">
+                    <img class="gallery-pic" src="{{ pic.data.path }}" alt="{{ pic.data.name }}"/>
+                </div>
+                <span class="pic-label">{{ pic.data.name }}</span>
+            </div>
+        </a>
+    {% endfor %}
+    {% for pic in collections.short %}
+        <a href="{{ pic.url }}">
+            <div class="gallery-pic-container-short">
+                <div class="flex-container-column centered"><img class="gallery-pic" src="{{ pic.data.path }}" alt="{{ pic.data.name }}"/></div>
+                <span class="pic-label">{{ pic.data.name }}</span>
+            </div>
+        </a>
+    {% endfor %}
