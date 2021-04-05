@@ -5,3 +5,4 @@ date: 2020-04-14
 previous: /pages/art/l/casual-space-shock/
 next: /pages/art/l/dragon-moon-king-spook/
 ---
+
